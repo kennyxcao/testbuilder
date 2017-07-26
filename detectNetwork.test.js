@@ -163,7 +163,7 @@ describe('Discover', function() {
         var jj = j;
         return function() {
           expect(detectNetwork(discoverPrefixes[ii] + '9'.repeat(discoverLengths[jj] - discoverPrefixes[ii].length))).to.equal('Discover');
-        }
+        };
       })() );
     }
   }
@@ -183,7 +183,7 @@ describe('Maestro', function() {
         var jj = j;
         return function() {
           expect(detectNetwork(maestroPrefixes[ii] + '9'.repeat(maestroLengths[jj] - maestroPrefixes[ii].length))).to.equal('Maestro');
-        }
+        };
       })() );
     }
   }
@@ -202,7 +202,7 @@ describe('China UnionPay', function() {
         var jj = j;
         return function() {
           expect(detectNetwork(unionpayPrefixes[ii] + '9'.repeat(unionpayLengths[jj] - unionpayPrefixes[ii].length))).to.equal('China UnionPay');
-        }
+        };
       })() );
     }
   }
@@ -228,7 +228,7 @@ describe('Switch', function() {
         var jj = j;
         return function() {
           expect(detectNetwork(switchPrefixes[ii] + '9'.repeat(switchLengths[jj] - switchPrefixes[ii].length))).to.equal('Switch');
-        }
+        };
       })() );
     }
   }
